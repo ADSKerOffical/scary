@@ -1,0 +1,213 @@
+local hasScriptRan = false
+ local function runOnce()
+        local function onHealthChanged(health)
+    if health <= 0 then
+        game:Shutdown()
+    end
+end
+
+game.Players.LocalPlayer.Character.Humanoid.HealthChanged:Connect(onHealthChanged)
+
+local function Main1()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1, 100005, 66)
+
+part = Instance.new("Part")
+part.Name = "Part"
+part.Size = Vector3.new(50000, 5, 50000)
+part.Transparency = 0
+part.Anchored = true
+part.Position = Vector3.new(-1, 99999, 66)
+part.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part.Material = Enum.Material.Grass
+part.Parent = game.Workspace
+
+part2 = Instance.new("Part")
+part2.Name = "Part"
+part2.Size = Vector3.new(50000, 5, 50000)
+part2.Transparency = 0
+part2.Anchored = true
+part2.Position = Vector3.new(-1600, 99999, 66)
+part2.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part2.Material = Enum.Material.Grass
+part2.Parent = game.Workspace
+
+for i = 1, 300 do
+a = math.random(1, 50)
+ b = math.random(1, 50)
+  c = math.random(1, 50)
+   d = math.random(-9900, 500)
+    e = 100050
+     f = math.random(-500, 500)
+part1 = Instance.new("Part")
+part1.Name = "Part1"
+part1.Size = Vector3.new(a, b, c)
+part1.Transparency = 0
+part1.Anchored = false
+part1.Position = Vector3.new(d, e, f)
+part1.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part1.Material = Enum.Material.Grass
+part1.Parent = game.Workspace
+   task.wait()
+end
+  end
+  
+  local function Main2()
+  Ambient1 = Instance.new("Sound", game.Workspace)
+Ambient1.Name = "Spooky"
+Ambient1.SoundId = "rbxassetid://5554912458"
+Ambient1.Volume = 2.5
+Ambient1.PlaybackSpeed = 1
+Ambient1.Looped = true
+Ambient1:Play()
+  end
+  
+  local function Area2()
+  part3 = Instance.new("Part")
+part3.Name = "Part"
+part3.Size = Vector3.new(50000, 5, 50000)
+part3.Transparency = 0
+part3.Anchored = true
+part3.Position = Vector3.new(-3000, 99999, 66)
+part3.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part3.Material = Enum.Material.Grass
+part3.Parent = game.Workspace
+
+activated = false
+
+local function onTouched(hit)
+    local character = hit.Parent
+    local humanoid  = character:FindFirstChildOfClass("Humanoid")
+    if humanoid and not activated then
+        if humanoid == game.Players.LocalPlayer.Character.Humanoid then
+            Ambient1:Stop()
+            game.Lighting.FogStart = 20
+game.Lighting.FogEnd = 50
+game.Lighting.FogColor = Color3.new(0,0,0)
+
+Ambient2 = Instance.new("Sound", game.Workspace)
+Ambient2.Name = "Spooky"
+Ambient2.SoundId = "rbxassetid://1427189017"
+Ambient2.Volume = 1
+Ambient2.PlaybackSpeed = 1
+Ambient2.Looped = true
+Ambient2:Play()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ADSKerOffical/NextBot/main/NextBot"))()
+   activated = true
+        end
+    end
+end
+
+part3.Touched:Connect(onTouched)
+
+part4 = Instance.new("Part")
+part4.Name = "Part"
+part4.Size = Vector3.new(50000, 5, 50000)
+part4.Transparency = 0
+part4.Anchored = true
+part4.Position = Vector3.new(-4300, 99999, 66)
+part4.BrickColor = BrickColor.new(Color3.new(0, 40, 0))
+part4.Material = Enum.Material.Grass
+part4.Parent = game.Workspace
+  end
+  
+  local function Main3()
+  part5 = Instance.new("Part")
+part5.Name = "Part"
+part5.Size = Vector3.new(50000, 5, 50000)
+part5.Transparency = 0
+part5.Anchored = true
+part5.Position = Vector3.new(-5400, 99999, 66)
+part5.BrickColor = BrickColor.new(Color3.new(0, 40, 0))
+part5.Material = Enum.Material.Grass
+part5.Parent = game.Workspace
+
+part6 = Instance.new("Part")
+part6.Name = "Part"
+part6.Size = Vector3.new(50000, 5, 50000)
+part6.Transparency = 0
+part6.Anchored = true
+part6.Position = Vector3.new(-6500, 99999, 66)
+part6.BrickColor = BrickColor.new(Color3.new(0, 40, 0))
+part6.Material = Enum.Material.Grass
+part6.Parent = game.Workspace
+  end
+  
+  local function Area3()
+part7 = Instance.new("Part")
+part7.Name = "Part"
+part7.Size = Vector3.new(50000, 5, 50000)
+part7.Transparency = 0
+part7.Anchored = true
+part7.Position = Vector3.new(-7700, 99999, 66)
+part7.BrickColor = BrickColor.new(Color3.new(0, 40, 0))
+part7.Material = Enum.Material.Grass
+part7.Parent = game.Workspace
+
+activated2 = false
+
+local function onTouched(hit)
+    local character = hit.Parent
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid and not activated2 then
+        if humanoid == game.Players.LocalPlayer.Character.Humanoid then
+local co = Instance.new("ColorCorrectionEffect")
+co.Parent = game.Lighting
+co.Saturation = 100
+co.TintColor = Color3.fromRGB(255, 0, 0)
+
+for i,v in pairs(workspace:GetDescendants()) do
+        if v:IsA("Sound") then
+            v.PlaybackSpeed = 0.9
+        end
+    end
+    activated2 = true
+    game.Lighting.FogStart = 70
+game.Lighting.FogEnd = 9999
+game.Lighting.FogColor = Color3.new(0,0,0)
+        end
+    end
+end
+
+part7.Touched:Connect(onTouched)
+end
+
+local function Main4()
+part8 = Instance.new("Part")
+part8.Name = "Part"
+part8.Size = Vector3.new(50000, 5, 50000)
+part8.Transparency = 0
+part8.Anchored = true
+part8.Position = Vector3.new(-8800, 99999, 66)
+part8.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part8.Material = Enum.Material.Grass
+part8.Parent = game.Workspace
+
+part9 = Instance.new("Part")
+part9.Name = "Part"
+part9.Size = Vector3.new(50000, 5, 50000)
+part9.Transparency = 0
+part9.Anchored = true
+part9.Position = Vector3.new(-10000, 99999, 66)
+part9.BrickColor = BrickColor.new(Color3.new(0, 80, 0))
+part9.Material = Enum.Material.Grass
+part9.Parent = game.Workspace
+end
+  
+  local function Effect()
+  game.Lighting.TimeOfDay = "23.59"
+  end
+  
+  coroutine.wrap(Main1)()
+coroutine.wrap(Main2)()
+coroutine.wrap(Main3)()
+coroutine.wrap(Main4)()
+coroutine.wrap(Area2)()
+coroutine.wrap(Area3)()
+coroutine.wrap(Effect)()
+
+hasScriptRan = true
+end
+
+if not hasScriptRan then
+    runOnce()
+end

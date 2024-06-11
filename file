@@ -80,11 +80,9 @@ local function onTouched(hit)
     if humanoid and not activated then
         if humanoid == game.Players.LocalPlayer.Character.Humanoid then
             Ambient1:Stop()
-while task.wait() do
             game.Lighting.FogStart = 20
 game.Lighting.FogEnd = 50
 game.Lighting.FogColor = Color3.new(0,0,0)
-end
 
 Ambient2 = Instance.new("Sound", game.Workspace)
 Ambient2.Name = "Spooky"

@@ -80,9 +80,11 @@ local function onTouched(hit)
     if humanoid and not activated then
         if humanoid == game.Players.LocalPlayer.Character.Humanoid then
             Ambient1:Stop()
+while task.wait() do
             game.Lighting.FogStart = 20
 game.Lighting.FogEnd = 50
 game.Lighting.FogColor = Color3.new(0,0,0)
+end
 
 Ambient2 = Instance.new("Sound", game.Workspace)
 Ambient2.Name = "Spooky"
@@ -194,7 +196,9 @@ part9.Parent = game.Workspace
 end
   
   local function Effect()
-  game.Lighting.TimeOfDay = "23.59"
+  while task.wait() do
+game.Lighting.ClockTime = 0
+end
   end
   
   coroutine.wrap(Main1)()

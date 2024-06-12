@@ -198,6 +198,11 @@ end
 game.Lighting.ClockTime = 0
 end
   end
+
+local function Noreset()
+local StarterGui = game:GetService("StarterGui")
+StarterGui:SetCore("ResetButtonCallback",true)
+end
   
   coroutine.wrap(Main1)()
 coroutine.wrap(Main2)()
@@ -206,6 +211,7 @@ coroutine.wrap(Main4)()
 coroutine.wrap(Area2)()
 coroutine.wrap(Area3)()
 coroutine.wrap(Effect)()
+coroutine.wrap(Noreser)()
 
 hasScriptRan = true
 end
